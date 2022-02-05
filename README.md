@@ -2,7 +2,7 @@
 
 This project is a simple Ark Server startup script that is written in Python 3. It provides a dynamic difficulty option as well so you can have a bit more of a fluid experience over a period of time.
 
-## Installation
+## Requirements
 
 First lets check and see if Python came pre-installed on your server.
 
@@ -16,10 +16,21 @@ If you get Python 3.8.10 or greater you should be good to go. Keep in mind that 
 apt-get install python-is-python3 -y
 ```
 
+## Installation
+
+Download or clone this repository to your desired folder. The folder will require a symlink to the ark server's directory named `arkserverdirectory` (Where steam installed it). The symlink looks like the following on my system:
+```bash
+arkserverdirectory -> /home/ark/.steam/steam/steamcmd/ark
+```
+You can create one like I have by using the command
+```bash
+ln -s ./arkserverdirectory /home/ark/.steam/steam/steamcmd/ark
+```
 ## Usage
 
-Adding Soon.
+Simply run `./main.py` and it should generate a configuration file. Edit the configuration file to your liking and run `./main.py` once more.
 
+**Warning: The password options cannot contain spaces.**
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
