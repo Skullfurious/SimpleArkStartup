@@ -1,4 +1,4 @@
-## Simple Ark Startup
+## Smart Ark Launcher
 
 This project is a simple Ark Server startup script that is written in Python 3. It provides a dynamic difficulty option as well so you can have a bit more of a fluid experience over a period of time.
 
